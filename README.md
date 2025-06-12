@@ -11,3 +11,32 @@ This project involves a comprehensive analysis of Netflix's movies and TV shows 
 - Identify the most common ratings for movies and TV shows.
 - List and analyze content based on release years, countries, and durations.
 - Explore and categorize content based on specific criteria and keywords.
+
+## Dataset
+
+The data for this project is sourced from the Kaggle dataset:
+
+- **Dataset Link:** [Movies Dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download)
+
+
+## Schema
+
+```sql
+drop table if exists netflix_
+CREATE TABLE netflix_
+(
+    show_id      NVARCHAR(6),
+    type_        NVARCHAR(10),
+    title        NVARCHAR(150),
+    director     NVARCHAR(208),
+    casts        NVARCHAR(1000),
+    country      NVARCHAR(150),
+    date_added   NVARCHAR(50),
+    release_year INT,
+    rating       NVARCHAR(10),
+    duration     NVARCHAR(15),
+    listed_in    NVARCHAR(100),
+    description  NVARCHAR(250)
+)
+```
+
